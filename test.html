@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello JITSI</title>
+    <link href="styles/main.css" rel="stylesheet" type="text/css" />
+        <script defer src="JS/SpeechRecognition.js"></script>
+        <script defer src="JS/sentimentAPI.js"></script>
+        <script defer src="JS/sentiment.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://meet.jit.si/external_api.js"></script>
+        <script>
+        $(document).ready(function(){
+          var domain = "http://localhost:8000/Desktop/SEM7/SDP/JITSI/public_html/test.html";
+          var options = {
+            roomName: "My Jitsi Meet Room",
+            width: 500,
+            height: 500,
+            parentNode: document.querySelector('#meet')
+          }
+        var api = new JitsiMeetExternalAPI(domain, options);
+        });
+        </script>
+  </head>
+  <body>
+    <header>
+      <h1>TEST</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a> </li>
+          <li><a href="jitsi.html">Jitsi Meet</a></li>
+          <li><a href="SpeechRecognition.html">Speech Recognition</a></li>
+          <li><a href="test.html">test</a></li>
+          <li><a href="sentiment.html">sentiment</a></li>
+        </ul>
+      </nav>
+    </header> 
+    <video id = "video" width="0" height="0" autoplay muted></video>
+    <div class="words" contenteditable></div>
+    <div class="SentimentOutput" contenteditable></div>
+    <button>Sentiment Analysis</button>
+    <div id = "meet"></div>
+  
+</body>
+</html>
+
