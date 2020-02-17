@@ -1,7 +1,7 @@
 
 Promise.all([
-  faceapi.nets.faceExpressionNet.loadFromUri('/Desktop/SEM7/SDP/JITSI/public_html/models'),
-  faceapi.nets.tinyFaceDetector.loadFromUri('/Desktop/SEM7/SDP/JITSI/public_html/models')
+  faceapi.nets.faceExpressionNet.loadFromUri('models'),
+  faceapi.nets.tinyFaceDetector.loadFromUri('models')
 ]).then(startVideo)
 
 
