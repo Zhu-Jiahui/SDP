@@ -1,5 +1,5 @@
 $(document).ready(function(){
-                var domain = "meet.jit.si";
+                var domain = "zhu-jiahui.github.io/SDP/test.html";
           var options = {
             roomName: "My Jitsi Meet Room",
             width: 580,
