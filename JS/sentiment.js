@@ -82,7 +82,7 @@ video.addEventListener('play', () => {
     }
 
     //console.log(array[0]);
-    console.log(detectionsWithExpressions[0].expressions)
+    //console.log(detectionsWithExpressions[0].expressions)
     phrase.textContent = array[0].nickname + "(" + parseFloat(array[0].score).toFixed(2) + ")";
     const SentimentOutput = document.querySelector('.SentimentOutput');
     SentimentOutput.appendChild(phrase);
