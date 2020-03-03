@@ -26,7 +26,7 @@ nav ul li {
     list-style-type: none;
 }
 
-.words {
+.embed{
     width: 580px;
     height: 580px;
     margin: auto;
@@ -40,18 +40,6 @@ nav ul li {
     line-height: normal;
     float: right;
     overflow: scroll;
-}
-
-.words:before {
-    content: '';
-    position: static;
-    width: 4px;
-    top: 0;
-    left: 30px;
-    bottom: 0;
-    border: 1px solid;
-    border-color: transparent #efe4e4;
-    float: right;
 }
 
 p {
